@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+// COLORS
+$primary-color: #4b6cb7;
+/*$primary-color: #dd1818;*/
+/*$primary-color: #4286f4;*/
+/*$primary-color: #29323c;*/
+$secondary-color: #333333;
+/*$secondary-color: #373B44;*/
+/*$secondary-color: #485563;*/
+$background-color: #FFF;
+$secondary-background-color: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
+$white-color: #FFF;
+
+// FONT SIZE
+$default-font-size: 1.1rem;
+$big-font-size: 5rem;
+$mid-font-size: 3rem;
+
+body {
+	font-family: 'Montserrat', sans-serif;
+  color: $secondary-color;
+}
+
+.App-intro-name{
+  color: $primary-color;
+}
+
+.App-intro-name, .App-intro-job{
+  font-size: $mid-font-size;
+  font-weight: bold;
+}
+.App-intro-menu-item{
+  font-size: $default-font-size;
+  font-weight: bold;
+}
+.App-intro-menu-item:hover{
+  color: $primary-color;
+}
+
+.App-Profile-container{
+	background-image: $secondary-background-color;
+	color: $white-color;
+}
+.App-Profile-title{
+  font-size: $mid-font-size;
+}
+.App-profile-description-item{
+  font-size: $default-font-size;
+}
+
+.App-project-list-title{
+  font-size: $mid-font-size;
+}
+
+.App-project-title{
+  font-family: 'Roboto', sans-serif;
+  font-size: $big-font-size;
+}
+.App-project-description{
+  font-size: $default-font-size;
+}
+.App-project-link{
+  color: $primary-color;
+  font-weight: bold;
+}
+.App-project-right-title{
+  font-weight: bold;
+}
+
+.App-techs-list-title{
+  font-size: $mid-font-size;
+}
+.App-techs-list-item{
+  font-size: $default-font-size;
+}
+
+.App-footer{
+	/*background-image: $secondary-background-color;*/
+  border-top: 3px solid $primary-color;
+}
+.App-Links-image{
+  /*background: $white-color;*/
+}
+
+@media screen and (max-width: 600px) {
+  .App-project-title {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,52 @@
+/*Techs section*/
+.App-techs-container{
+  margin: $sectionMarginTop 0 0 0;
+}
+.App-techs-list-title{
+  display: flex;
+}
+.App-techs-list-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.App-techs-list-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1% auto;
+  width: 40%;
+}
+.App-techs-list-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .App-techs-container {
+    margin: 50% 0 0 0;
+  }
+  .App-techs-list-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% auto;
+  }
+  .App-techs-list-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0% auto;
+    width: 80%;
+  }
+  .App-tech-logo {
+    height: auto;
+    margin: 0 0 10px 0;
+    max-width: 200px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: auto;
+  }
+}

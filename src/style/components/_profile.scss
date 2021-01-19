@@ -1,0 +1,55 @@
+/*Profile section*/
+.App-Profile-container{
+  padding: 3% 3% 0 3%;
+  height: 75vh;
+}
+.App-Profile-title{
+  display: flex;
+}
+.App-Profile-description-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  height: 80%;
+}
+.App-Profile-photo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App-Profile-photo{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  /*margin: 0 auto;*/
+}
+.App-profile-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  text-align: left;
+}
+.App-profile-description-item{
+  margin: 2%;
+}
+
+@media screen and (max-width: 600px) {
+  .App-Profile-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .App-Profile-description-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    width: 100%;
+    margin: 5% auto;
+  }
+  .App-profile-description {
+    width: 100%;
+  }
+}

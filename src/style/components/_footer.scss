@@ -1,0 +1,20 @@
+/*Footer section*/
+.App-footer{
+  padding: 3%;
+}
+.App-Links-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.App-Links-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1%;
+}
+.App-Links-image{
+  width: 50px;
+  height: auto;
+}

@@ -1,0 +1,171 @@
+/*Unique Project section*/
+.App-project{
+  width: 100%;
+  height: 350px;
+  line-height: 300px;
+  margin: 5% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.App-project-left-container{
+  width: 40%;
+  height: 300px;
+  line-height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.App-project-title{
+  line-height: initial;
+  text-align: left;
+}
+.App-project-right-container{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  line-height: 20px;
+  text-align: left;
+  opacity: 1;
+  transition: 1s;
+}
+.App-project-right-top-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.App-project-description-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App-project-description{
+  width: 90%;
+  text-align: justify;
+}
+.App-project-link{
+  text-decoration: none;
+}
+.App-project-screenshot-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App-project-screenshot{
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 3px 10px #000000;
+}
+.App-project-right-bottom-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 3% 0 0 0;
+}
+.App-project-right-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 3%;
+}
+.App-project-techs-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.App-project-techs-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+/*  width: 200px;
+  height: 80px;*/
+}
+.App-tech-logo-container{
+/*  width: 200px;
+  height: 80px;*/
+}
+.App-tech-logo{
+  height: auto;
+  margin: 0 0 10px 20px;
+  max-width:200px;
+  min-width: 80px;
+  max-height:80px;
+  min-height: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .App-project{
+    width: 100%;
+    height: auto;
+    line-height: 300px;
+    margin: 4% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .App-project-left-container{
+    width: 40%;
+    height: 140px;
+    line-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  } 
+}
+
+@media screen and (max-width: 1200px) {
+  .App-project{
+    width: 100%;
+    height: auto;
+    line-height: 300px;
+    margin: 4% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .App-project-left-container {
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .App-project-title {
+    margin-bottom: 3%;
+  }
+  .App-project-right-container {
+    width: 95%;
+  }
+  .App-project-right-top-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .App-project-screenshot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .App-project-description {
+    width: 100%;
+    /*font-size: $default-font-size;*/
+    /*color: dimgray;*/
+    text-align: justify;
+    margin: 5% 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .App-project {
+    margin: 10% 0;
+  }
+  .App-project-title {
+    font-size: 50px;
+  }
+}
