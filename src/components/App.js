@@ -1,9 +1,10 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { UserContext } from '../context/UserContext';
 import '../style/App.css';
 import Intro from './Intro/Intro';
 import Projects from './Projects/Projects';
-import Links from './Links/Links';
 import Fade from 'react-reveal/Fade';
+import Links from './Links/Links';
 
 import { projectsData, stackLogos } from '../data/data';
 
@@ -17,21 +18,23 @@ const App = () => {
   }, [])
 
   return (
-    <div className='App'>
-      <header className='App-header'></header>
-      <main className='App-main'>
-        <Fade duration={2000}>
-          <Intro/>
-        </Fade>
-        <Projects 
-          projects={ projects }
-          logos={ logos }
-        />
-      </main>
-      <footer className='App-footer'>
-        <Links/>
-      </footer>
-    </div>
+    <UserContext.Provider value={{ projects, logos }}>
+      <div className='App'>
+        <header className='App-header'></header>
+        <main className='App-main'>
+          <Fade duration={2000}>
+            <Intro/>
+          </Fade>
+          <Projects 
+            projects={ projects }
+            logos={ logos }
+          />
+        </main>
+        <footer className='App-footer'>
+          <Links/>
+        </footer>
+      </div>
+    </UserContext.Provider>
   );
 }
 

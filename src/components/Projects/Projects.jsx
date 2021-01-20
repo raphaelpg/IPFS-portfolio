@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext } from 'react';
+import { UserContext } from '../../context/UserContext';
 import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
-let Projects = (props) => {
+
+let Projects = () => {
+  const { projects, logos } = useContext(UserContext);
+
   return (
     <div className="App-project-list-container">
       <Link to="project-list" smooth duration={1000}>
@@ -16,7 +20,7 @@ let Projects = (props) => {
       </Link>
 
       <div className="App-project-list">
-        {props.projects.map(project=>{
+        {projects.map(project => {
           const {id, title, info, info2, info3, url, repo, img, stack } = project;
 
           return(
@@ -78,7 +82,7 @@ let Projects = (props) => {
                             <div className="App-tech-logo-container">
                               <img 
                                 className="App-tech-logo" 
-                                src={'/images/' + props.logos[item] } 
+                                src={'/images/' + logos[item] } 
                                 alt={item + " logo"}
                               />
                             </div>
