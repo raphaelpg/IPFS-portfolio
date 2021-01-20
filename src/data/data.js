@@ -3,7 +3,7 @@ export const stackLogos = {
   aave: 'Aave_logo.svg',
   aws: 'AWS_logo.jpeg',
   css: 'CSS3_logo.svg',
-  emailJs: 'emailJs_logo.jpeg',
+  emailJs: 'EmailJs_logo.jpeg',
   ethereum: 'Ethereum_logo.jpeg',
   express: 'expressjs_logo.svg',
   ganache: 'Ganache_logo.jpeg',
