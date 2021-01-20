@@ -25,12 +25,12 @@ let Projects = () => {
 
           return(
             <div key={id} className="App-project">
-              <Fade left duration={2000}>
+              <Fade left duration={2000} distance="30px">
                 <div className="App-project-left-container">
                   <div className="App-project-title">{title}</div>
                 </div>
               </Fade>
-              <Fade bottom duration={2000}>
+              <Fade bottom duration={2000} distance="50px">
                 <div className="App-project-right-container">
                   <div className="App-project-right-top-container">
                     <div className="App-project-description-container">

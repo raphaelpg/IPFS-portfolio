@@ -18,6 +18,7 @@ export const stackLogos = {
   php: 'PHP_Logo.svg',
   react: 'react-logo.jpeg',
   sass: 'Sass_Logo_Color.svg',
+  solidity: 'solidity-logo.jpeg',
   sql: 'sql_logo.jpeg',
   superfluid: 'Superfluid_logo.jpeg',
   truffle: 'truffle-logo.svg',
