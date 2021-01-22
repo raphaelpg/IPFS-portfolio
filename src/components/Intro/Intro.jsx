@@ -23,7 +23,7 @@ let Intro = () => {
 	          <div className="App-intro-menu-item" >Projects</div>
 	        </Link>
 	        <Link to="contact" smooth duration={1000}>
-	          <div className="App-intro-menu-item" >Contact</div>
+	          <div className="App-intro-menu-item-2" >Contact</div>
 	        </Link>
 				</div>
 			</Fade>

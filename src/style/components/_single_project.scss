@@ -46,6 +46,7 @@
 }
 .App-project-link{
   text-decoration: none;
+  transition: $button-transition-speed;
 }
 .App-project-screenshot-container{
   display: flex;

@@ -9,6 +9,8 @@ $primary-color: #4b6cb7;
 $secondary-color: #333333;
 /*$secondary-color: #373B44;*/
 /*$secondary-color: #485563;*/
+$third-color: #f5af19;
+$fourth-color: #f12711;
 $background-color: #FFF;
 $secondary-background-color: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
 $white-color: #FFF;
@@ -17,6 +19,9 @@ $white-color: #FFF;
 $default-font-size: 1.1rem;
 $big-font-size: 5rem;
 $mid-font-size: 3rem;
+
+// EFFECTS
+$button-transition-speed: 0.3s;
 
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -32,11 +37,20 @@ body {
   font-weight: bold;
 }
 .App-intro-menu-item{
+  color: $primary-color;
   font-size: $default-font-size;
   font-weight: bold;
 }
 .App-intro-menu-item:hover{
+  color: $third-color;
+}
+.App-intro-menu-item-2{
   color: $primary-color;
+  font-size: $default-font-size;
+  font-weight: bold; 
+}
+.App-intro-menu-item-2:hover{
+  color: $fourth-color;
 }
 
 .App-Profile-container{
@@ -64,6 +78,9 @@ body {
 .App-project-link{
   color: $primary-color;
   font-weight: bold;
+}
+.App-project-link:hover{
+  color: $third-color;
 }
 .App-project-right-title{
   font-weight: bold;

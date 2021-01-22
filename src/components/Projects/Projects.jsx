@@ -62,7 +62,7 @@ let Projects = () => {
                     </div>
                     <div className="App-project-screenshot-container">
                       <a 
-                        href={url} 
+                        href={url || repo} 
                         target="_blank" 
                         rel="noopener noreferrer"
                       >
@@ -80,11 +80,13 @@ let Projects = () => {
                         {stack.map(item => (
                           <div key={item} className="App-project-techs-item">
                             <div className="App-tech-logo-container">
-                              <img 
-                                className="App-tech-logo" 
-                                src={'/images/' + logos[item] } 
-                                alt={item + " logo"}
-                              />
+                              <a href={logos[item][1]} target="_blank" rel="noopener noreferrer">
+                                <img 
+                                  className="App-tech-logo" 
+                                  src={'/images/' + logos[item][0] } 
+                                  alt={item + " logo"}
+                                />
+                              </a>
                             </div>
                           </div>
                         ))}
