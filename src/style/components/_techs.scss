@@ -6,20 +6,17 @@
   display: flex;
 }
 .App-techs-list-container{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: flex-start;
 }
 .App-techs-list-row{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: space-around;
   margin: 1% auto;
   width: 40%;
 }
 .App-techs-list-item{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: center;
 }
 

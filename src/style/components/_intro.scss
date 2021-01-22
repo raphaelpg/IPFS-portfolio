@@ -1,42 +1,35 @@
 /*Intro section*/
 .App-intro{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   margin-bottom: 0%;
   height: 100vh;
 }
 .App-intro-container{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: left;
   margin: 0 0 0 15%;
 }
 .App-intro-title-container{
-  display: flex;
+  @extend %flex-column;
   justify-content: center;
-  flex-direction: column;
   height: 70vh;
 }
 .App-intro-name, .App-intro-job{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: space-around;
   margin: 3% auto 0 auto;
 }
 .App-intro-job{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: space-around;
   margin: 2% auto 0 auto;
 }
 .App-intro-menu-container{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: space-around;
 }
 .App-intro-menu-item{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: center;
   transition: $button-transition-speed;
 }
@@ -45,8 +38,7 @@
   transition: $button-transition-speed;
 }
 .App-intro-menu-item-2{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: center;
   transition: $button-transition-speed;
 }
@@ -54,11 +46,19 @@
   cursor: pointer;
   transition: $button-transition-speed;
 }
+.App-intro-menu-item-3{
+  @extend %flex-column;
+  justify-content: center;
+  transition: $button-transition-speed;
+}
+.App-intro-menu-item-3:hover{
+  cursor: pointer;
+  transition: $button-transition-speed;
+}
 
 @media screen and (max-width: 1000px) {
   .App-intro-container{
-    display: flex;
-    flex-direction: row;
+    @extend %flex-row;
     justify-content: center;
     margin: 0 0 0 0;
   }

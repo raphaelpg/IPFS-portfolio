@@ -17,6 +17,16 @@ body {
   width: 100%;
 }
 
+.App-techs-list-item, .App-techs-list-container, .App-project-techs-item, .App-project-right-title, .App-project-screenshot-container, .App-project-description-container, .App-project-right-container, .App-project-list, .App-profile-description, .App-Profile-photo-container, .App-intro-menu-item-3, .App-intro-menu-item-2, .App-intro-menu-item, .App-intro-name, .App-intro-job, .App-intro-title-container, .App-intro, .App-Links-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-techs-list-row, .App-project-techs-container, .App-project-right-bottom-container, .App-project-right-top-container, .App-project-left-container, .App-project, .App-Profile-description-container, .App-intro-menu-container, .App-intro-container, .App-Links-container {
+  display: flex;
+  flex-direction: row;
+}
+
 /*$primary-color: #dd1818;*/
 /*$primary-color: #4286f4;*/
 /*$primary-color: #29323c;*/
@@ -56,6 +66,16 @@ body {
   color: #f12711;
 }
 
+.App-intro-menu-item-3 {
+  color: #4b6cb7;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.App-intro-menu-item-3:hover {
+  color: #0f9b0f;
+}
+
 .App-Profile-container {
   background-image: linear-gradient(135deg, #333333 0%, #4b6cb7 100%);
   color: #FFF;
@@ -71,6 +91,7 @@ body {
 
 .App-project-list-title {
   font-size: 3rem;
+  color: #4b6cb7;
 }
 
 .App-project-title {
@@ -123,15 +144,11 @@ body {
 }
 
 .App-Links-container {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 100%;
 }
 
 .App-Links-link {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   margin: 0 1%;
 }
@@ -143,49 +160,35 @@ body {
 
 /*Intro section*/
 .App-intro {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 0%;
   height: 100vh;
 }
 
 .App-intro-container {
-  display: flex;
-  flex-direction: row;
   justify-content: left;
   margin: 0 0 0 15%;
 }
 
 .App-intro-title-container {
-  display: flex;
   justify-content: center;
-  flex-direction: column;
   height: 70vh;
 }
 
 .App-intro-name, .App-intro-job {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   margin: 3% auto 0 auto;
 }
 
 .App-intro-job {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   margin: 2% auto 0 auto;
 }
 
 .App-intro-menu-container {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
 .App-intro-menu-item {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   transition: 0.3s;
 }
@@ -196,8 +199,6 @@ body {
 }
 
 .App-intro-menu-item-2 {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   transition: 0.3s;
 }
@@ -207,10 +208,18 @@ body {
   transition: 0.3s;
 }
 
+.App-intro-menu-item-3 {
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.App-intro-menu-item-3:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 @media screen and (max-width: 1000px) {
   .App-intro-container {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     margin: 0 0 0 0;
   }
@@ -238,8 +247,6 @@ body {
 }
 
 .App-Profile-description-container {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   width: 80%;
   margin: auto;
@@ -247,8 +254,6 @@ body {
 }
 
 .App-Profile-photo-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -260,8 +265,6 @@ body {
 }
 
 .App-profile-description {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   width: 60%;
   text-align: left;
@@ -304,15 +307,11 @@ body {
 }
 
 .App-project-list {
-  display: flex;
-  flex-direction: column;
   margin-left: 2%;
 }
 
 @media screen and (max-width: 900px) {
   .App-project-list {
-    display: flex;
-    flex-direction: column;
     margin-left: 0;
   }
 }
@@ -333,8 +332,6 @@ body {
   height: 350px;
   line-height: 300px;
   margin: 5% 0;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -343,8 +340,6 @@ body {
   width: 40%;
   height: 300px;
   line-height: 300px;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
 }
 
@@ -354,8 +349,6 @@ body {
 }
 
 .App-project-right-container {
-  display: flex;
-  flex-direction: column;
   width: 60%;
   line-height: 20px;
   text-align: left;
@@ -364,14 +357,10 @@ body {
 }
 
 .App-project-right-top-container {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 .App-project-description-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -386,8 +375,6 @@ body {
 }
 
 .App-project-screenshot-container {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -398,30 +385,22 @@ body {
 }
 
 .App-project-right-bottom-container {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   margin: 3% 0 0 0;
 }
 
 .App-project-right-title {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   margin-top: 3%;
 }
 
 .App-project-techs-container {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
 }
 
 .App-project-techs-item {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   /*  width: 200px;
     height: 80px;*/
@@ -530,22 +509,16 @@ body {
 }
 
 .App-techs-list-container {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
 .App-techs-list-row {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   margin: 1% auto;
   width: 40%;
 }
 
 .App-techs-list-item {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 

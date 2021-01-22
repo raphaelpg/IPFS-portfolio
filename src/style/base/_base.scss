@@ -11,3 +11,11 @@ body{
 .App-main{
   width: 100%;
 }
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+%flex-row {
+	display: flex;
+  flex-direction: row;
+}

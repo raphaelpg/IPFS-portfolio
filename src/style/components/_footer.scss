@@ -3,14 +3,12 @@
   padding: 3%;
 }
 .App-Links-container{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: center;
   width: 100%;
 }
 .App-Links-link{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: center;
   margin: 0 1%;
 }

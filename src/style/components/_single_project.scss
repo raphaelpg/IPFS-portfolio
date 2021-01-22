@@ -4,8 +4,7 @@
   height: 350px;
   line-height: 300px;
   margin: 5% 0;
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -13,8 +12,7 @@
   width: 40%;
   height: 300px;
   line-height: 300px;
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: flex-start;
 }
 .App-project-title{
@@ -22,8 +20,7 @@
   text-align: left;
 }
 .App-project-right-container{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   width: 60%;
   line-height: 20px;
   text-align: left;
@@ -31,13 +28,11 @@
   transition: 1s;
 }
 .App-project-right-top-container{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: space-between;
 }
 .App-project-description-container{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: center;
 }
 .App-project-description{
@@ -49,8 +44,7 @@
   transition: $button-transition-speed;
 }
 .App-project-screenshot-container{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: center;
 }
 .App-project-screenshot{
@@ -59,27 +53,23 @@
   box-shadow: 0px 3px 10px #000000;
 }
 .App-project-right-bottom-container{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: flex-start;
   margin: 3% 0 0 0;
 }
 .App-project-right-title{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: flex-start;
   margin-top: 3%;
 }
 .App-project-techs-container{
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
 }
 .App-project-techs-item{
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   justify-content: center;
 /*  width: 200px;
   height: 80px;*/
