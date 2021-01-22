@@ -25,6 +25,7 @@ let Intro = () => {
 	        <Link to="contact" smooth duration={1000}>
 	          <div className="App-intro-menu-item-2" >Contact</div>
 	        </Link>
+          <a className="App-intro-menu-item-2" href="https://raw.githubusercontent.com/raphaelpg/CV/master/Raphael_Pinto_JS_Full_Stack.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
 				</div>
 			</Fade>
 	  </div>
