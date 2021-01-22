@@ -6,7 +6,7 @@ let Intro = () => {
   return (
 		<div className="App-intro">
 			{/*<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">*/}
-			<Fade left duration={2000} delay={500} distance="30px">
+			<Fade left duration={1000} delay={500} distance="30px">
 				<div className="App-intro-container">
 					<div className="App-intro-title-container">
 						<div className="App-intro-name">Raphael Pinto Gregorio</div>
@@ -14,7 +14,7 @@ let Intro = () => {
 					</div>
 				</div>
 			</Fade>
-			<Fade bottom duration={2000} delay={500} distance="30px">
+			<Fade bottom duration={1000} delay={1000} distance="30px">
 				<div className="App-intro-menu-container">
 					{/*<Link to="info" smooth duration={1000}>
 	          <div className="App-intro-menu-item" >More info</div>

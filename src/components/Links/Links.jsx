@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from 'react';
+import { UserContext } from '../../context/UserContext';
 
 let Links = () => {
+  const { logos } = useContext(UserContext);
+
+  const [links, setLinks] = useState([]);
+
+  useEffect(() => {
+    setLinks(['github', 'linkedin']);
+  }, [])
+
   return (
     <div name="contact" className="App-Links-container">
-      <a className="App-Links-link" href="https://github.com/raphaelpg/" target="_blank" rel="noopener noreferrer">
-        <img className="App-Links-image" src="/images/github.jpeg" alt="Raphael Pinto Gregorio GitHub link" />
-      </a>
-      <a className="App-Links-link" href="https://www.linkedin.com/in/raphael-pinto-gregorio-660b2579/" target="_blank" rel="noopener noreferrer">
-        <img className="App-Links-image" src="/images/linkedin.jpeg" alt="Raphael Pinto Gregorio LinkedIn link" />
-      </a>
+      {links.map(item => (
+        <a key={item} className="App-Links-link" href={logos[item][1]} target="_blank" rel="noopener noreferrer">
+          <img className="App-Links-image" src={'/images/' + logos[item][0]} alt={logos[item][1] + " logo"} />
+        </a>
+      ))}
     </div>
   );
 };

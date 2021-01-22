@@ -3,7 +3,6 @@ import { UserContext } from '../../context/UserContext';
 import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
-
 let Projects = () => {
   const { projects, logos } = useContext(UserContext);
 
