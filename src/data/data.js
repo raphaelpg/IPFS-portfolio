@@ -54,9 +54,9 @@ export const projectsData = [
     title: 'Irrigate-x-Superfluid',
     info: 'Second version of Irrigate platform, this time integrating Superfluid protocol allowing users to subscribe monthly donations in DAI (Constant Flow Agreement).',
     info2: 'Also using Superfluid Instant Distribution Agreement to simultaneously distribute funds to all the associations at the end of the month.',
-    info3: 'Deployed on Goerli testnet and hosted on AWS EC2.',
+    info3: 'Deployed on Goerli testnet and hosted on Heroku.',
     info4: 'Solo project.',
-    url: '',
+    url: 'https://irrigate-v2.herokuapp.com/',
     repo: 'https://github.com/raphaelpg/irrigateV2-x-Superfluid',
     stack: [
       'react',
@@ -66,7 +66,7 @@ export const projectsData = [
       'ethereum',
       'web3',
       'superfluid',
-      'aws',
+      'heroku',
     ]
   },
   {
